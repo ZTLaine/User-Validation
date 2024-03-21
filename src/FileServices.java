@@ -13,9 +13,8 @@ public class FileServices {
 //        allow it to enter finally block
         Scanner scanner = null;
         try {
-            System.out.println("Current working directory: " + System.getProperty("user.dir"));
             scanner = new Scanner(new File(filename));
-            scanner.useDelimiter(",");
+            scanner.useDelimiter("[,\n]");
 
             List<User> userList = new ArrayList<>();
 
@@ -28,7 +27,6 @@ public class FileServices {
 
                 User user = new User(username, password, name);
                 user.userContent();
-                System.out.println("~*~");
                 userList.add(user);
             }
 
@@ -37,6 +35,7 @@ public class FileServices {
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            System.out.println("File not found: " + filename);
         }
         finally{
             if(scanner != null){

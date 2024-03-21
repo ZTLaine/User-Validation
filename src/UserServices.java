@@ -2,17 +2,34 @@ import java.util.*;
 
 public class UserServices {
     static User[] users;
+    static boolean loginSuccess = false;
+    static int attempts = 0;
+    static int MAX_ATTEMPTS = 4;
 
     static void login(){
         //read the stored users into an array from the file
         FileServices file = new FileServices("data.txt");
         users = file.readFile(users);
 
-        User inputUser = userInput();
-        inputUser.userContent();
-//        for(User user : users){
-//
-//        }
+        while(attempts < MAX_ATTEMPTS && !loginSuccess) {
+            User inputUser = userInput();
+            inputUser.userContent();
+            for (User user : users) {
+                if (inputUser.compareUser(user)) {
+                    loginSuccess = true;
+                    System.out.println("Welcome " + user.name);
+                }
+            }
+            if(!loginSuccess){
+
+                attempts++;
+                System.out.println("Invalid login, please try again.");
+            }
+
+        }
+        if(attempts == MAX_ATTEMPTS){
+            System.out.println("Too many failed attempts, you are now locked out.");
+        }
     }
 
     static User userInput(){

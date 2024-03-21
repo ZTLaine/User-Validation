@@ -34,8 +34,8 @@ public class User {
         System.out.println("name: " + this.name);
     }
 
-    boolean compareUser(User user1, User user2){
-        return user1.username.equalsIgnoreCase(user2.username) &&
-                user1.password.equals(user2.password);
+    boolean compareUser(User validate){
+        return this.username.equalsIgnoreCase(validate.username) &&
+                this.password.equals(validate.password);
     }
 }

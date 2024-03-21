@@ -11,22 +11,18 @@ public class FileServices {
     User[] readFile(User[] users) {
 //        creates scanner outside scope of try catch, to
 //        allow it to enter finally block
-        Scanner scanner = null;
-        try {
-            scanner = new Scanner(new File(filename));
+        try (Scanner scanner = new Scanner(new File(filename))) {
             scanner.useDelimiter("[,\n]");
 
             List<User> userList = new ArrayList<>();
 
             //instantiates a User with the file data and adds it to a List
             while (scanner.hasNextLine()) {
-//                String line = scanner.nextLine();
                 String username = scanner.next();
                 String password = scanner.next();
                 String name = scanner.next();
 
                 User user = new User(username, password, name);
-                user.userContent();
                 userList.add(user);
             }
 
@@ -36,11 +32,6 @@ public class FileServices {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.out.println("File not found: " + filename);
-        }
-        finally{
-            if(scanner != null){
-                scanner.close();
-            }
         }
         return users;
     }

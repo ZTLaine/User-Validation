@@ -7,6 +7,7 @@
     <list default="true" id="17348f28-39cf-4d28-a58a-d97f9a13dc65" name="Changes" comment="File io functioning, but reading incorrectly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserServices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2e08anz3hrmqrJpAe4L5lvSuOhG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -43,6 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/CodersCampus/Assignment2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711030204268</updated>
       <workItem from="1711030205806" duration="3512000" />
+      <workItem from="1711056271109" duration="2380000" />
     </task>
     <task id="LOCAL-00001" summary="File io functioning, but reading incorrectly">
       <option name="closed" value="true" />

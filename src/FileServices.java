@@ -1,3 +1,7 @@
+//  3/22/24
+//  Zack Laine
+//  Assignment 3
+
 import java.io.*;
 import java.util.*;
 

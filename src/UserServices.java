@@ -1,3 +1,7 @@
+//  3/22/24
+//  Zack Laine
+//  Assignment 3
+
 import java.util.*;
 
 public class UserServices {
@@ -14,7 +18,6 @@ public class UserServices {
 
         while(attempts < MAX_ATTEMPTS && !loginSuccess) {
             User inputUser = userInput();
-            inputUser.userContent();
             for (User user : users) {
                 if (inputUser.compareUser(user)) {
                     loginSuccess = true;

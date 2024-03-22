@@ -1,3 +1,7 @@
+//  3/22/24
+//  Zack Laine
+//  Assignment 3
+
 public class User {
     String username;
     String password;
@@ -28,14 +32,15 @@ public class User {
         this.name = name;
     }
 
+    boolean compareUser(User validate){
+        return this.username.equalsIgnoreCase(validate.username) &&
+                this.password.equals(validate.password);
+    }
+
+    //used for testing only
     void userContent(){
         System.out.println("username: " + this.username);
         System.out.println("password: " + this.password);
         System.out.println("name: " + this.name);
-    }
-
-    boolean compareUser(User validate){
-        return this.username.equalsIgnoreCase(validate.username) &&
-                this.password.equals(validate.password);
     }
 }

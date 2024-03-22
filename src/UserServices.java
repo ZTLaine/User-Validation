@@ -4,7 +4,8 @@ public class UserServices {
     static User[] users;
     static boolean loginSuccess = false;
     static int attempts = 0;
-    static int MAX_ATTEMPTS = 4;
+    static int MAX_ATTEMPTS = 5;
+    static Scanner scanner = UserLoginApplication.scanner;
 
     static void login(){
         //read the stored users into an array from the file
@@ -21,11 +22,9 @@ public class UserServices {
                 }
             }
             if(!loginSuccess){
-
                 attempts++;
                 System.out.println("Invalid login, please try again.");
             }
-
         }
         if(attempts == MAX_ATTEMPTS){
             System.out.println("Too many failed attempts, you are now locked out.");
@@ -33,15 +32,11 @@ public class UserServices {
     }
 
     static User userInput(){
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println("Enter username: ");
         String username = scanner.next();
         System.out.println("Enter password: ");
         String password = scanner.next();
 
-        scanner.close();
         return new User(username, password, "");
-
     }
 }

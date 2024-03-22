@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17348f28-39cf-4d28-a58a-d97f9a13dc65" name="Changes" comment="Start of credential valididation">
+    <list default="true" id="17348f28-39cf-4d28-a58a-d97f9a13dc65" name="Changes" comment="Working! Need to clean it up and test edge cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserLoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserLoginApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserServices.java" afterDir="false" />
     </list>
@@ -64,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711030204268</updated>
       <workItem from="1711030205806" duration="3512000" />
-      <workItem from="1711056271109" duration="8940000" />
+      <workItem from="1711056271109" duration="11205000" />
     </task>
     <task id="LOCAL-00001" summary="File io functioning, but reading incorrectly">
       <option name="closed" value="true" />
@@ -90,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711060180170</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Working! Need to clean it up and test edge cases">
+      <option name="closed" value="true" />
+      <created>1711127215215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711127215215</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +123,8 @@
     <MESSAGE value="File io functioning, but reading incorrectly" />
     <MESSAGE value="Reading user input and creating User" />
     <MESSAGE value="Start of credential valididation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start of credential valididation" />
+    <MESSAGE value="Working! Need to clean it up and test edge cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working! Need to clean it up and test edge cases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

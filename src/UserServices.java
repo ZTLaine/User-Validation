@@ -8,7 +8,7 @@ public class UserServices {
     static User[] users;
     static boolean loginSuccess = false;
     static int attempts = 0;
-    static int MAX_ATTEMPTS = 5;
+    static final int MAX_ATTEMPTS = 5;
     static Scanner scanner = UserLoginApplication.scanner;
 
     static void login(){
